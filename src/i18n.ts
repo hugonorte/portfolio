@@ -8,6 +8,25 @@ export async function generateStaticParams() {
   // Retorna uma lista de objetos contendo os parâmetros de rota possíveis
   return locales.map(locale => ({ locale }));
 }
+
+export async function getStaticProps({ params }) {
+  const { locale } = params;
+
+  if (!locales.includes(locale)) {
+    return {
+      notFound: true,
+    };
+  }
+
+  const messages = (await import(`../messages/${locale}.json`)).default;
+
+  return {
+    props: {
+      locale,
+      messages,
+    },
+  };
+}
  
 export default getRequestConfig(async ({locale}) => {
   // Validate that the incoming `locale` parameter is valid

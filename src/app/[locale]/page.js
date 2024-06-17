@@ -11,17 +11,36 @@ import Footer from '../../components/Footer'
 /* export const metadata = {
   description: 'The React Framework for the Web',
 } */
-  const locales = ['en', 'de', 'pt-br', 'es'];
+const locales = ['en', 'de', 'pt-br', 'es'];
 
-  export async function generateStaticParams() {
-    // Retorna uma lista de objetos contendo os parâmetros de rota possíveis
-    return locales.map(locale => ({ locale }));
+export async function generateStaticParams() {
+  // Retorna uma lista de objetos contendo os parâmetros de rota possíveis
+  return locales.map(locale => ({ locale }));
+}
+
+export async function getStaticProps({ params }) {
+  const { locale } = params;
+
+  if (!locales.includes(locale)) {
+    return {
+      notFound: true,
+    };
   }
 
-export default function Index({params}) {
+  const messages = (await import(`../messages/${locale}.json`)).default;
+
+  return {
+    props: {
+      locale,
+      messages,
+    },
+  };
+}
+
+export default function Index({ params }) {
 
   const t = useTranslations('Index');
-  const {slug} = params;
+  const { slug } = params;
   return (
     <>
       <div className={styles.col_1}>
