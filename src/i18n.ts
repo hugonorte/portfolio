@@ -3,6 +3,11 @@ import {getRequestConfig} from 'next-intl/server';
  
 // Can be imported from a shared config
 const locales = ['en', 'de', 'pt-br', 'es'];
+
+export async function generateStaticParams() {
+  // Retorna uma lista de objetos contendo os parâmetros de rota possíveis
+  return locales.map(locale => ({ locale }));
+}
  
 export default getRequestConfig(async ({locale}) => {
   // Validate that the incoming `locale` parameter is valid
