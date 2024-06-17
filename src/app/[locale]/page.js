@@ -12,10 +12,6 @@ import Footer from '../../components/Footer'
   description: 'The React Framework for the Web',
 } */
 
-const redirect = (locale) => {
-  window.location.href = `/${locale}`
-}
-
 export default function Index() {
 
   const t = useTranslations('Index');
