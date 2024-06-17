@@ -11,11 +11,17 @@ import Footer from '../../components/Footer'
 /* export const metadata = {
   description: 'The React Framework for the Web',
 } */
+  const locales = ['en', 'de', 'pt-br', 'es'];
 
-export default function Index() {
+  export async function generateStaticParams() {
+    // Retorna uma lista de objetos contendo os parâmetros de rota possíveis
+    return locales.map(locale => ({ locale }));
+  }
+
+export default function Index({params}) {
 
   const t = useTranslations('Index');
-
+  const {slug} = params;
   return (
     <>
       <div className={styles.col_1}>
