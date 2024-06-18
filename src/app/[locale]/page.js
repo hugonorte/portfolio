@@ -7,6 +7,7 @@ import Education from '../../components/Education'
 import ProfessionalSkills from '../../components/ProfessionalSkills'
 import AwardsAndHonors from '../../components/AwardsAndHonors'
 import Footer from '../../components/Footer'
+import {unstable_setRequestLocale} from 'next-intl/server';
 
 /* export const metadata = {
   description: 'The React Framework for the Web',
@@ -38,7 +39,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Index({ params }) {
-
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Index');
   const { slug } = params;
   return (
