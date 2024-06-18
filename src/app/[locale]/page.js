@@ -19,25 +19,6 @@ export async function generateStaticParams() {
   return locales.map(locale => ({ locale }));
 }
 
-export async function getStaticProps({ params }) {
-  const { locale } = params;
-
-  if (!locales.includes(locale)) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const messages = (await import(`../messages/${locale}.json`)).default;
-
-  return {
-    props: {
-      locale,
-      messages,
-    },
-  };
-}
-
 export default function Index({ params }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations('Index');
