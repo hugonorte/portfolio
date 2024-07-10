@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import LinkedInLogo from '../../../public/img/linkedin.svg'
+import GithubLogo from '../../../public/img/github.svg'
 import { getDictionary } from '@/app/[lang]/dictionaries';
 import { Language } from '@/types/language';
 
@@ -23,6 +24,21 @@ async function Lead(props: Language) {
           </Link>
 
           <Link href="https://www.linkedin.com/in/hugonorte" target="_blank">
+            @hugonorte
+          </Link>
+        </p>
+        <p className={styles.linkedin}>
+          <Link href="https://github.com/hugonorte/portfolio" target="_blank">
+            <Image
+              src={GithubLogo}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className={styles.linkedin_logo}
+            />
+          </Link>
+
+          <Link href="https://github.com/hugonorte/portfolio" target="_blank">
             @hugonorte
           </Link>
         </p>
