@@ -1,9 +1,9 @@
-import createNextIntlPlugin from 'next-intl/plugin';
-
-const withNextIntl = createNextIntlPlugin();
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const isProductionEnv = process.env.NODE_ENV = 'production';
+const nextConfig = { 
+     basePath: isProductionEnv ? '/teste_build_nextjs' : '',
+    distDir: 'dist',
 };
 
-export default withNextIntl(nextConfig);
+export default nextConfig;
