@@ -36,6 +36,12 @@ async function ProfessionalSkills(props: Language) {
                 <li>PostGres</li>
             </ul>
 
+            <h3>API</h3>
+            <ul>
+                <li>REST API</li>
+                <li>Postman</li>
+            </ul>
+
             <h3>{dict.index.idioms.title}</h3>
             <ul>
                 <li>{dict.index.idioms.country.en} – {dict.index.idioms.proficiency.advanced}</li>
