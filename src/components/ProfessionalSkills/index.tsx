@@ -26,6 +26,7 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>NextJs</li>
                 <li>React</li>
+                <li>Angular</li>
                 <li>HTML</li>
                 <li>HTML</li>
                 <li>CSS</li>
