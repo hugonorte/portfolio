@@ -2,4 +2,11 @@
     ul {
         margin-bottom: 40px;
     }
+    .list-style-none {
+        list-style: none;
+        ul {
+            padding-left: 1rem;
+            font-size: 0.9rem;
+        }
+    }
 }

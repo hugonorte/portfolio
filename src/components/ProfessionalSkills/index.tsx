@@ -12,20 +12,20 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>Javascript</li>
                 <li>Python</li>
-                <li>
+                <li className="list-style-none">
                     <ul>
                         <li>Django</li>
                         <li>Flask</li>
                     </ul>
                 </li>
                 <li>PHP</li>
-                <li>
+                <li className="list-style-none">
                     <ul>
                         <li>Laravel</li>
                     </ul>
                 </li>
                 <li>GO</li>
-                <li>
+                <li className="list-style-none">
                     <ul>
                         <li>Gin</li>
                     </ul>
