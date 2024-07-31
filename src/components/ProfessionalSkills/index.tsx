@@ -60,7 +60,12 @@ async function ProfessionalSkills(props: Language) {
 
             <h3>CLOUD</h3>
             <ul>
-                <li>AWS - S3</li>
+                <li>AWS</li>
+                <li className="list-style-none">
+                    <ul>
+                        <li>S3</li>
+                    </ul>
+                </li>
             </ul>
 
             <h3>{dict.index.idioms.title}</h3>
