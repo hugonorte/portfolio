@@ -10,10 +10,26 @@ async function ProfessionalSkills(props: Language) {
             <h2>{dict.index.professional_skills_title}</h2>
             <h3>{dict.index.programming_languages}</h3>
             <ul>
-                <li>Python</li>
                 <li>Javascript</li>
+                <li>Python</li>
+                <li>
+                    <ul>
+                        <li>Django</li>
+                        <li>Flask</li>
+                    </ul>
+                </li>
                 <li>PHP</li>
+                <li>
+                    <ul>
+                        <li>Laravel</li>
+                    </ul>
+                </li>
                 <li>GO</li>
+                <li>
+                    <ul>
+                        <li>Gin</li>
+                    </ul>
+                </li>
             </ul>
 
             <h3>{dict.index.databases}</h3>
@@ -40,6 +56,11 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>REST API</li>
                 <li>Postman</li>
+            </ul>
+
+            <h3>CLOUD</h3>
+            <ul>
+                <li>AWS - S3</li>
             </ul>
 
             <h3>{dict.index.idioms.title}</h3>
