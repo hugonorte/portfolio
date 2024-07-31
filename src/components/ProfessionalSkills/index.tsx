@@ -12,20 +12,20 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>Javascript</li>
                 <li>Python</li>
-                <li className="list-style-none">
+                <li className={styles.list_style_none}>
                     <ul>
                         <li>Django</li>
                         <li>Flask</li>
                     </ul>
                 </li>
                 <li>PHP</li>
-                <li className="list-style-none">
+                <li className={styles.list_style_none}>
                     <ul>
                         <li>Laravel</li>
                     </ul>
                 </li>
                 <li>GO</li>
-                <li className="list-style-none">
+                <li className={styles.list_style_none}>
                     <ul>
                         <li>Gin</li>
                     </ul>
@@ -61,7 +61,7 @@ async function ProfessionalSkills(props: Language) {
             <h3>CLOUD</h3>
             <ul>
                 <li>AWS</li>
-                <li className="list-style-none">
+                <li className={styles.list_style_none}>
                     <ul>
                         <li>S3</li>
                     </ul>
