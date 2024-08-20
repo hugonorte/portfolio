@@ -18,7 +18,7 @@ async function ProfessionalSkills(props: Language) {
                         <li>Flask</li>
                     </ul>
                 </li>
-                <li>PHP</li>
+                <li>PHP</li>list_style_none
                 <li className={styles.list_style_none}>
                     <ul>
                         <li>Laravel</li>
@@ -28,6 +28,7 @@ async function ProfessionalSkills(props: Language) {
                 <li className={styles.list_style_none}>
                     <ul>
                         <li>Gin</li>
+                        <li>GORM</li>
                     </ul>
                 </li>
             </ul>
@@ -36,6 +37,11 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>MySQL</li>
                 <li>PostGres</li>
+            </ul>
+
+            <h3>Container</h3>
+            <ul>
+                <li>Docker</li>
             </ul>
 
             <h3>{dict.index.frontend}</h3>
