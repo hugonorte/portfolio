@@ -17,7 +17,7 @@ async function Education(props: Language) {
             <h2>{dict.index.education_title}</h2>
             <div id="education_01" className={styles.education_card}>
                 <h3>{dict.index.education_cards.card_01.title} <span className={styles.education_h3_parenthesis}>({dict.index.education_cards.card_01.title_parenthesis})</span></h3>
-                <p className={styles.education_degree}>{dict.index.education_cards.card_01.degree} – {dict.index.from} 2023 – 2027</p>
+                <p className={styles.education_degree}>{dict.index.education_cards.card_01.degree} – {dict.index.from} 2023 – 2026</p>
                 <p className={styles.education_instituition}>
                     <strong>{dict.index.institution}</strong>: Unifeso
                 </p>

@@ -18,7 +18,7 @@ async function ProfessionalSkills(props: Language) {
                         <li>Flask</li>
                     </ul>
                 </li>
-                <li>PHP</li>list_style_none
+                <li>PHP</li>
                 <li className={styles.list_style_none}>
                     <ul>
                         <li>Laravel</li>
@@ -48,14 +48,14 @@ async function ProfessionalSkills(props: Language) {
             <ul>
                 <li>NextJs</li>
                 <li>React</li>
+                <li>Vue</li>
                 <li>Angular</li>
-                <li>HTML</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Sass</li>
                 <li>Bootstrap</li>
                 <li>Tailwind</li>
-                <li>PostGres</li>
+                <li>GraphiQL</li>
             </ul>
 
             <h3>API</h3>
@@ -72,6 +72,13 @@ async function ProfessionalSkills(props: Language) {
                         <li>S3</li>
                     </ul>
                 </li>
+            </ul>
+
+            <h3>AI</h3>
+            <ul>
+                <li>LangChain</li>
+                <li>OpenAI API</li>
+                <li>RAG</li>
             </ul>
 
             <h3>{dict.index.idioms.title}</h3>
